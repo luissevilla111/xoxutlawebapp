@@ -1,0 +1,39 @@
+.cont-social-net{
+  display: flex;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item{
+  padding: 0 3rem;
+}
+
+.social-item i{
+  font-size: 4rem;
+}
+
+@media (min-width: 768px){
+  .social-item i{
+    font-size: 5rem;
+  }
+}
+
+.social-item i:hover{
+  cursor: pointer;
+}
+
+.social-item .fa-facebook-f {
+  color: #3b5998;
+}
+
+.social-item .fa-instagram{
+  color:#C32AA3 ;
+}
+
+.social-item .fa-twitter{
+  color: #0084b4;
+}
+
+

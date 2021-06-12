@@ -1,0 +1,27 @@
+<!-- <div class="hero">
+    <h1>Bienvenido a xxxxxxxx</h1>
+</div> -->
+
+<ngx-slick-carousel class="carousel"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig"
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <!-- <img src="{{ slide.img }}" alt="" width="100%"> -->
+              <div class="hero" ngxSlickItem [ngStyle]="{'background-image':'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('+slide+')'}">
+                <h1>Bienvenido a xxxxxxxx</h1>
+              </div>
+
+        </div>
+
+
+    </ngx-slick-carousel>
+
+    <!-- <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button> -->

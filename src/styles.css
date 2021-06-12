@@ -1,0 +1,162 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+
+:root {
+  --opensans: "Open Sans", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --ptsans: "PT Sans", sans-serif;
+  --linergradblack: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  --orange:#fb4f14;
+  --blue:#3399CC;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #F0E2E7;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-family: var(--oswald);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+}
+
+h2 {
+  font-size: 3.4rem;
+  text-align: center;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+/* font-family: fontAwesome; */
+/* h2::after {
+  font-family: "Font Awesome 5 Free";
+
+  font-weight: 900;
+  content: "\f141";
+  text-align: center;
+  font-size: 4.5rem;
+  display: block;
+} */
+
+h3 {
+  font-size: 3.2rem;
+  font-family: var(--oswald);
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3.4rem;
+  }
+}
+
+h4 {
+  font-size: 3.0rem;
+  font-family: var(--oswald);
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 3.2rem;
+  }
+}
+
+p {
+  font-size: 2.0rem;
+  font-family: var(--ptsans);
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 2.2rem;
+  }
+}
+
+.display-block{
+  display: block!important;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  text-align: center;
+  border: 2px solid var(--blue-tone2);
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.button:hover{
+  cursor: pointer;
+}
+
+.button-orange{
+  background: var(--orange);
+}
+
+.button-orange:hover{
+  background: #fc6836;
+}
+
+.block-body{
+  max-height: 100vh;
+  overflow: hidden;
+
+}
+img{
+  max-width: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("./assets/images/new-york-668616_1920.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@media (min-width: 768px) {
+  .parallax {
+    background-attachment: fixed;
+    min-height: 400px;
+  }
+}
+
+.center-elements-col{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-black{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("./assets/images/parallaxsocialne.jpg");
+}
+
+
+
+

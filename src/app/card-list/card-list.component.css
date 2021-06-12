@@ -1,0 +1,20 @@
+div.cards-list{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 1rem;
+}
+
+@media (min-width: 768px){
+  div.cards-list{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+@media (min-width: 992px){
+  div.cards-list{
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}

@@ -1,0 +1,30 @@
+
+<div
+  class="cont-icon-menu"
+  (click)="activateMenu()"
+  [@menuOpenTrigger]="openMenu"
+  (@menuOpenTrigger.done)="showMenuListItems()">
+
+
+    <i class="fas fa-bars" *ngIf="this.openMenu === 'close'"></i>
+</div>
+
+<div *ngIf="showMenu">
+  <particles #par [style]="myStyle" [width]="width" [height]="height" [params]="myParams">
+
+  </particles>
+
+  <ul class="navbar-list">
+    <li class="navbar-item"> <p>Inicio</p></li>
+    <li class="navbar-item"><p>Menus</p></li>
+    <li class="navbar-item"><p>Ayuda</p></li>
+    <li class="navbar-item"><p>Contacto</p></li>
+  </ul>
+ <div class="cont-close-menu" (click)="disactive()">
+  <i class="far fa-times-circle"></i>
+ </div>
+
+</div>
+
+
+

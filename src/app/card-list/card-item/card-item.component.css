@@ -1,0 +1,24 @@
+
+div.card-item{
+  width: 100%;
+  text-align: center;
+  border: 0.1rem solid var(--orange);
+  transition: 0.5s all ease-in-out;
+}
+
+div.card-item:hover{
+  scale: 1.1;
+}
+
+div.card-item h4{
+  margin: 2rem 0;
+}
+
+div.card-item-info{
+  padding: 2rem 0;
+  background: #cccccc;
+}
+div.card-item-info h4{
+  color: var(--blue);
+  text-transform: uppercase;
+}
